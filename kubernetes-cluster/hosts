@@ -1,0 +1,6 @@
+[master]
+master.k8s.com
+
+[slave]
+slave1.k8s.com
+slave2.k8s.com
