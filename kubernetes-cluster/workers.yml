@@ -15,7 +15,7 @@
   become: yes
   tasks:
     - name: join cluster
-      shell: "{{ hostvars['master.k8s.com'].join_command }} >> node_joined.txt"
+      shell: "{{ hostvars['master.example.com'].join_command }} >> node_joined.txt"
       args:
         chdir: $HOME
         creates: node_joined.txt

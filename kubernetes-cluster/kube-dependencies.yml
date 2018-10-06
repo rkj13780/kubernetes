@@ -10,6 +10,7 @@
    - name: start Docker
      service:
        name: docker
+       enabled: yes
        state: started
 
    - name: disable SELinux
