@@ -37,6 +37,7 @@
         packages:
         - vim
         - bash-completion
+        - wget
 
     - name: source auto kubectl completion
       shell: |

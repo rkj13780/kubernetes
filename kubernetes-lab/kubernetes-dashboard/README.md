@@ -48,21 +48,9 @@ Step 2 - Import CA:
 
         kubectl create secret generic kubernetes-dashboard-certs --from-file=$HOME/certs -n kube-system
 
-Step 3 - Deploy Heapster, Grafana & InfluxDB:
-
-        kubectl create -f https://raw.githubusercontent.com/kubernetes/heapster/master/deploy/kube-config/influxdb/influxdb.yaml
-
-        kubectl create -f https://raw.githubusercontent.com/kubernetes/heapster/master/deploy/kube-config/influxdb/grafana.yaml
-
-        kubectl create -f https://raw.githubusercontent.com/kubernetes/heapster/master/deploy/kube-config/influxdb/heapster.yaml
-
-        kubectl create -f https://raw.githubusercontent.com/kubernetes/heapster/master/deploy/kube-config/rbac/heapster-rbac.yaml
-
-        Note: Wait for few minates to start starts.
-
 Step 4 - Deploy Dashboard:
 
-        kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard.yaml
+        kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/alternative/kubernetes-dashboard.yaml
 
         kubectl apply -f https://raw.githubusercontent.com/narenchandrak/kubernetes/master/kubernetes-lab/kubernetes-dashboard/dashboard-admin.yaml
 
@@ -80,32 +68,21 @@ Step 5 - Check port on which Dashboard was exposed:
 
 Method: 2
 
-Step 1 - Deploy Heapster, Grafana & InfluxDB
-
-For our charts and graphs to show up in our dashboard, we'll need to deploy charting tools to enabled the kubernetes dashboard display them.
-
-        kubectl create -f https://raw.githubusercontent.com/kubernetes/heapster/master/deploy/kube-config/influxdb/influxdb.yaml
-        kubectl create -f https://raw.githubusercontent.com/kubernetes/heapster/master/deploy/kube-config/influxdb/grafana.yaml
-        kubectl create -f https://raw.githubusercontent.com/kubernetes/heapster/master/deploy/kube-config/influxdb/heapster.yaml
-        kubectl create -f https://raw.githubusercontent.com/kubernetes/heapster/master/deploy/kube-config/rbac/heapster-rbac.yaml
-
-        Note: Wait for few minates to start starts.
-
-Step 2 - Deploy Dashboard
+Step 1 - Deploy Dashboard
 
 Deploy the dashboard containers to your cluster.
 
     kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard.yaml
 
-Step 3 - Create Admin User
+Step 2 - Create Admin User
 
     kubectl apply -f https://raw.githubusercontent.com/narenchandrak/kubernetes/master/kubernetes-lab/kubernetes-dashboard/dashboard-admin.yaml
 
-Step 4 - Get Service Account Token and Login
+Step 3 - Get Service Account Token and Login
 
-    kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep admin-user | awk '{print $1}')
+    kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep kubernetes-dashboard | awk '{print $1}')
 
-Step 5 - Enabling the Proxy
+Step 4 - Enabling the Proxy
 
     From the master server, execute the below command to run the kubernetes proxy command in the background.
 
