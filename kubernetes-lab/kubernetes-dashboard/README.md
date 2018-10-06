@@ -28,6 +28,8 @@ openssl can manually generate certificates for your cluster.
 
     4. Create a config file for generating a Certificate Signing Request (CSR). Be sure to substitute the values marked with angle brackets (e.g. <MASTER_IP>) with real values before saving this to a file (e.g. csr.conf). Note that the value for MASTER_CLUSTER_IP is the service cluster IP for the API server as described in previous subsection.
 
+        wget https://raw.githubusercontent.com/narenchandrak/kubernetes/master/kubernetes-lab/kubernetes-dashboard/csr.conf
+
     5. Generate the certificate signing request based on the config file:
 
         openssl req -new -key server.key -out dashboard.csr -config csr.conf
@@ -62,7 +64,7 @@ Step 4 - Deploy Dashboard:
 
         kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard.yaml
 
-        kubectl apply -f dashboard-admin.yaml
+        kubectl apply -f https://raw.githubusercontent.com/narenchandrak/kubernetes/master/kubernetes-lab/kubernetes-dashboard/dashboard-admin.yaml
 
 Step 4 - Modify kubernetes dashboard service:
 
@@ -99,7 +101,7 @@ Deploy the dashboard containers to your cluster.
 
 Step 3 - Create Admin User
 
-    kubectl apply -f dashboard-admin.yaml
+    kubectl apply -f https://raw.githubusercontent.com/narenchandrak/kubernetes/master/kubernetes-lab/kubernetes-dashboard/dashboard-admin.yaml
 
 Step 4 - Get Service Account Token and Login
 
