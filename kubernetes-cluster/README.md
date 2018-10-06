@@ -1,4 +1,4 @@
-Installation of Kubernetes-Cluster:
+# Installation of Kubernetes-Cluster
 
 Step 1 — Install Ansible on base node:
 

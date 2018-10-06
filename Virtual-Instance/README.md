@@ -25,7 +25,6 @@ Step 5 — Extract the Image:
 
 Step 6 —
 
-
 Step 7 — Genereate RSA Key and copy to script.
 
     ssh-keygen

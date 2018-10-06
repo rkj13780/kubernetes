@@ -78,8 +78,6 @@ Step 5 - Check port on which Dashboard was exposed:
 
     kubectl -n kube-system get service kubernetes-dashboard
 
-
-
 Method: 2
 
 Step 1 - Deploy Heapster, Grafana & InfluxDB
@@ -112,7 +110,6 @@ Step 5 - Enabling the Proxy
     From the master server, execute the below command to run the kubernetes proxy command in the background.
 
         nohup kubectl proxy --address="<master-ip>" -p 443 --accept-hosts='^*$' &
-
 
 Update:
 
