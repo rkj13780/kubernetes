@@ -48,7 +48,7 @@ Step 2 - Import CA:
 
         kubectl create secret generic kubernetes-dashboard-certs --from-file=$HOME/certs -n kube-system
 
-Step 4 - Deploy Dashboard:
+Step 3 - Deploy Dashboard:
 
         kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/alternative/kubernetes-dashboard.yaml
 
