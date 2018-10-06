@@ -1,4 +1,4 @@
-Introduction:
+# Helm Introduction and Installation
 
 Helm is a package manager for Kubernetes that allows developers and operators to more easily configure and deploy applications on Kubernetes clusters.
 

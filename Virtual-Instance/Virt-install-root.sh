@@ -23,7 +23,7 @@ fi
 DIR=/root/Desktop/virt/images/
 
 # Location of cloud image
-IMAGE=$DIR/Centos-7-1808.qcow2
+IMAGE=$DIR/CentOS-7-x86_64-GenericCloud.qcow2
 
 # Amount of RAM in MB
 MEM=4120
