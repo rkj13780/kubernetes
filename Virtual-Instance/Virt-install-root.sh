@@ -20,7 +20,7 @@ if [ "$?" -eq 0 ]; then
 fi
 
 # Directory to store images
-DIR=/root/Desktop/virt/images/
+DIR=~/virt/images/
 
 # Location of cloud image
 IMAGE=$DIR/CentOS-7-x86_64-GenericCloud.qcow2
@@ -138,7 +138,7 @@ _EOF_
 
     echo "$(date -R) DONE. SSH to $1 using $IP, with  username 'root'."
     echo "Adding $IP $1.example.com in /etc/hosts"
-    sed -i '/'$value'.example.com '$value'/d' /etc/hosts
+    sed -i '/'$1'.example.com/d' /etc/hosts
     if [ $? -eq 0 ]; then
         echo "$IP $1.example.com $1" >> /etc/hosts
         echo "successfully added value in /etc/hosts"

@@ -26,8 +26,8 @@ Step 4 — Instate Kubeadm in kuberenet master node
 
 Step 5 — Added slave nodes to master node
 
-    ansible-playbookc -i hosts slaves.yml --syntax-check
+    ansible-playbook -i hosts slaves.yml --syntax-check
 
-    ansible-playbookc -i hosts slaves.yml
+    ansible-playbook -i hosts slaves.yml
 
 Step 5 —  Added the all nodes details in /etc/hosts for all kuberenets nodes.
