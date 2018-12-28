@@ -1,22 +1,19 @@
-# Kubernetes 101 Content Bundle
+# Kubernetes
 
 In this workshop you will learn how to:
 
-* Provision a basic Kubernetes cluster from the ground up using [Google Compute Engine](https://cloud.google.com/compute)
-* Provision a complete Kubernetes using [Google Container Engine](https://cloud.google.com/container-engine)
+* Provision a basic Kubernetes cluster from the ground up using Ansible
 * Deploy and manage Docker containers using kubectl
 
 Kubernetes Version: v1.2.2
 
-All of the code for this workshop was written by [Kelsey Hightower](https://twitter.com/kelseyhightower).
-
-There are also [slides with speaker notes](https://docs.google.com/presentation/d/1n3avmL5GCYCYJEr8pLFBKe0wzvoOiUV2vxyW_pYFL5s/edit?usp=sharing).
+There are also [slides]().
 
 ## Labs
 
 Kubernetes is all about applications and in this section you will utilize the Kubernetes API to deploy, manage, and upgrade applications. In this part of the workshop you will use an example application called "app" to complete the labs.
 
-* [Workshop Setup](labs/workshop-setup.md)
+* [Workshop Setup](../../kubernetes-cluster/README.md)
 * [Containerizing your application](labs/containerizing-your-application.md)
 * [Creating and managing pods](labs/creating-and-managing-pods.md)
 * [Monitoring and health checks](labs/monitoring-and-health-checks.md)
