@@ -1,0 +1,17 @@
+version: '3'
+services:
+  toscao:
+    container_name: tosca-o
+    image: image-name
+    ports:
+    - "7001:7001"
+    depends_on:
+    - tosca-postgres
+    links:
+    - tosca-postgres
+    volumes:
+    - ./db-variables.conf:/usr/share/toscao/conf/toscao_db.conf
+  tosca-postgres:
+    container_name: tosca-postgres
+    image: postgres
+
