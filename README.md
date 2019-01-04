@@ -1,35 +1,104 @@
-# Content for Your Event
-
-## Course with Codelab
-
-| Resource  | duration | description | 
-| --- | --- | --- |
-| [Intro video](https://www.youtube.com/watch?v=T59RtLov9E0) | 5m | Course intro video. |
-| [Scalable Microservices with Kubernetes](https://www.udacity.com/course/scalable-microservices-with-kubernetes--ud615) | 180m | This is a detailed introductory Kubernetes course with industry experts like Kelsey Hightower, Adrian Cockcroft, and Carter Morgan. Just play the videos and follow along. |
-
-## Kubernetes 101 Workshop with Slides and Labs
-
-| Resource  | duration | description | 
-| --- | --- | --- |
-| [Slides](https://docs.google.com/presentation/d/1n3avmL5GCYCYJEr8pLFBKe0wzvoOiUV2vxyW_pYFL5s/edit?usp=sharing) | n/a | Slides with Speakernotes. |
-| [Workshop](kubernetes-lab/kubernetes/workshop)  | 180m | Kelsey Hightower's craftcon workshop -- the basis for the above talk and course.  The labs are below.  |
-
-## Kubernetes 101 Talk with Codelab, and Slides with speaker notes
-
-| Resource  | duration | description | 
-| --- | --- | --- |
-| [Talk](https://www.youtube.com/watch?v=21hXNReWsUU) | 30m | Course intro video. |
-| [Codelab](https://codelabs.developers.google.com/codelabs/cloud-orchestrate-with-kubernetes/#0) | 60m | Step by step codelab to walk through. |
-| [Slides](https://docs.google.com/presentation/d/13SsyxNXnb2pB05LOdjtgBNjARD_qw9Dl0FLZeAlQbKA/edit?usp=sharing) | n/a | Slides that go along with the talk. |
+# Content for Docker and Kubernetes
 
 
+##DAY 1
+ 
+1. Section 1
+   ```	
+    Introduction 
+    Introduction to Virtualization
+    Introduction to cloud computing 
+    Difference between virtualization and Containerization
+   ``` 	 
+
+2. Section 2
+   ```
+    What is a container? 
+        High level and low level overviews 
+    The building blocks 
+        Namespaces, cgroups, copy-on-write storage 
+    Container runtimes 
+        Docker, LXC, rkt, runC, systemd-nspawn OpenVZ, Jails, Zones	 
+   ```
+3. Section 3
+   ```
+    Basics of Docker
+    The Docker File
+    Docker Networks
+    Docker Volumes
+    Docker Commands and Structures
+    The Docker Compose	 
+   ```
+	
+##Day 2 	 	 	 
+ 
+1. Section 1
+   ``` 
+    what is kubernetes?
+    kubernetes components
+    Kubernetes Architecture
+   ```
+ 
+2. Section 2
+    ```
+    working with kubernetes objects
+    Object Management using kubectl
+    kubernetes object Management
+   ``` 	
+    
+3. Section 3	
+   ```
+    pod overview
+    pods
+    pod lifecycle
+    init containers
+   ```
+ 
+4. Section 4	
+   ```
+    replica set
+    replication controller
+    deployments 	 
+   ```	
+5. Section 5
+   ```
+    Services
+    DNS for Services and Pods
+    Connecting Applications with Services
+    Ingress
+    Network Policies
+    Adding entries to Pod /etc/hosts
+   ``` 	    
+6. Section 6
+   ```
+    Volumes
+    persistent volumes
+    volume snapshots
+    storage classes 
+   ```
+7. Section 7
+   ```	
+    Resource Quotas
+    Pod security Policies
+        What is a Pod Security Policy?
+        Enabling Pod Security Policies
+        Authorizing Policies
+   ```
+8. Section 8
+   ```
+    HELM CHART
+        Create
+        Delete
+        Upgrade
+        Rollback
+   ```	 
 ## Provide Feedback
 
 How can we improve? Please let us know what’s helpful and what we can do better by providing feedback through the dedicated surveys. Here's how:
 
-Answer a couple of questions before the workshop through [this survey](https://docs.google.com/a/google.com/forms/d/1CJ4Q0Ai8R84dHazOV5rNH34nFyWOGiEk7lthQudbKpA/).
+Answer a couple of questions before the workshop through [this survey]().
  
-Take the final survey after the workshop to [evaluate](https://docs.google.com/a/google.com/forms/d/1689NhgwHNfhd6p8dOSlc6xHBU3OR-OBbapGJp6PHHps/edit) the content. 
+Take the final survey after the workshop to [evaluate]() the content. 
 
 Please share those 2 links with your participants, if any, as well.
 
